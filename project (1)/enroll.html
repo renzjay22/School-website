@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Enroll Now</title>
+	<link rel="icon" href="logoslcv.jpg" type="image/jpg">
+	<link rel="stylesheet" href="css/enroll.css">
+    <link rel="icon" href="SLCV.png" type="image/png" sizes="16x16">
+</head>
+<body>
+	<div class="container">
+		
+		<form>
+			<h2 style="text-align: center; font-size: 25px; font-family: Arial, Helvetica, sans-serif;" >ST. LOUIS COLLEGE VALENZUELA</h2>
+			<h2 style="text-align: center; font-size: 15px; font-family: Arial, Helvetica, sans-serif;" >#5 Maysan Road, Valenzuela City </h2>
+		<img src="SLCV.png" alt="User Avatar">
+		  <h2 style="text-align: center;" >Student Personal Information</h2>
+		  <div class="form-group">
+			<label for="family-name">Name:</label>
+			<input type="text" id="family-name" name="family-name" placeholder="Family Name">
+			<input type="text" id="given-name" name="given-name" placeholder="Given Name">
+			<input type="text" id="middle-name" name="middle-name" placeholder="Middle Name">
+		  </div>
+		  <div class="form-group">
+			<label for="sex">Sex:</label>
+			<div class="radio-group">
+			  <label for="male"><input type="radio" id="male" name="sex" value="male">Male</label>
+			  <label for="female"><input type="radio" id="female" name="sex" value="female">Female</label>
+			</div>
+		  </div>
+		  <div class="form-group street">
+			<label for="civil-status" style="text-align: right; margin-right: 10px;">Civil Status:</label>
+			<select id="civil-status" name="civil-status">
+			  <option value="">Select an option</option>
+			  <option value="single">Single</option>
+			  <option value="married">Married</option>
+			  <option value="divorced">Divorced</option>
+			  <option value="widowed">Widowed</option>
+			</select>
+			<input type="text" id="nationality" name="nationality" placeholder="Nationality">
+			<input type="text" id="religion" name="religion" placeholder="Religion">
+		  </div>
+		  <div class="form-group">
+			<label for="Email">Email:</label>
+			<input type="text" id="Email" name="Email" placeholder="@" >
+			<input type="text" id="phonenumber" name="phonenumber" placeholder="Phone Number" onkeypress="return isNumber(event)" oninput="validateInput(this)">
+		  </div>
+		  <div class="form-group">
+			<label for="cityaddress">City Address:</label>
+			<input type="text" id="cityaddress" name="cityaddress"  style="width: 180%;">
+			<label for="phonenumber" style="text-align: right; margin-right: 2px;">Tel.No:</label>
+			<input type="text" id="phonenumber" name="phonenumber" onkeypress="return isNumber(event)" oninput="validateInput(this)">
+		  </div>
+		  <div class="form-group">
+			<label for="provincialaddress">Provincial Address:</label>
+			<input type="text" id="provincialaddress" name="provincialaddress" style="width: 180%;">
+			<label for="phonenumber" style="text-align: right; margin-right: 2px;">Tel.No:</label>
+			<input type="text" id="phonenumber" name="phonenumber" onkeypress="return isNumber(event)" oninput="validateInput(this)">
+		  </div>
+		  <div class="form-group">
+			<label for="father-name" style="text-align: right; margin-right: 2px;">Father's Name:</label>
+			<input type="text" id="father-name" name="father-name">
+			<label for="father-occupation" style="text-align: right; margin-right: 2px;">Occupation:</label>
+			<input type="text" id="father-occupation" name="father-occupation" >
+		  </div>
+		  <div class="form-group">
+			<label for="mother-name" style="text-align: right; margin-right: 2px;">Mother's Name:</label>
+			<input type="text" id="mother-name" name="mother-name" >
+			<label for="mother-occupation" style="text-align: right; margin-right: 2px;">Occupation:</label>
+			<input type="text" id="mother-occupation" name="mother-occupation" >
+		  </div>
+		  <div class="form-group">
+			<label for="tuition-paid-by">Tuition paid by:</label>
+			<div class="checkbox-group">
+			  <label><input type="checkbox" name="tuition-paid" value="student"> Student</label>
+			  <label><input type="checkbox" name="tuition-paid" value="parent"> Parent</label>
+			  <label><input type="checkbox" name="tuition-paid" value="sponsor"> Sponsor</label>
+			</div>
+			<input type="text" id="tuition-text" name="tuition-text" >
+			<div class="emergency-section">
+				<label for="emergency-number">EMERGENCY 24/7 PARENT'S NUMBER:</label>
+				<div class="input-container">
+				  <input type="text" id="emergency-number-1" name="emergency-number-1" placeholder="First Number" onkeypress="return isNumber(event)" oninput="validateInput(this)">
+				  <input type="text" id="emergency-number-2" name="emergency-number-2" placeholder="Second Number" onkeypress="return isNumber(event)" oninput="validateInput(this)">
+				</div>
+			  </div>			  
+		  </div>
+		  <div class="form-group">
+			<label for="elementary">Elementary Completed at:</label>
+			<input type="text" id="elementary" name="elementary" style="width: 150%;">
+			<label for="phonenumber" style="text-align: right; margin-right: 2px;">Year Graduated:</label>
+			<input type="text" id="year-input" name="year-input" placeholder="yyyy" onkeypress="return isNumber(event)" oninput="validateInput(this)">
+			<span id="number-message" class="error-message">Please enter numbers only.</span>
+		  </div>
+		  <div class="form-group">
+			<label for="secondary">Secondary Completed at:</label>
+			<input type="text" id="secondary" name="secondary" style="width: 150%;">
+			<label for="Year" style="text-align: right; margin-right: 2px;">Year Graduated:</label>
+			<input type="text" id="year-input" name="year-input" placeholder="yyyy" onkeypress="return isNumber(event)" oninput="validateInput(this)">
+			<span id="number-message" class="error-message">Please enter numbers only.</span>
+		  </div>
+		  <div class="form-group">
+			<label for="last">School Last Attended:</label>
+			<input type="text" id="last" name="last" style="width: 150%;">
+			<label for="Year" style="text-align: right; margin-right: 2px;">Year Graduated:</label>
+			<input type="text" id="year-input" name="year-input" placeholder="yyyy" onkeypress="return isNumber(event)" oninput="validateInput(this)">
+			<span id="number-message" class="error-message">Please enter numbers only.</span>
+		  </div>
+		  
+		  <div class="button-container">
+			
+			<button class="cancel-button" type="button" onclick="location.href='index.html'">Submit</button>
+		  </div>
+	  	</div>
+		</form>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+	</div>
+</body>   
+</html>

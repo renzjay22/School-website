@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" href="SLCV.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/about.css">
+    <style>
+        .container {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .container img {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .container p{
+          text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .container p.bottom-paragraph {
+            text-align: justify;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+        .container h1 {
+            background-color: #1F8A70; /* Set the background color to yellow (#FFFF00) */
+            display: inline-block;
+            padding: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); /* Add shadow effect */
+            color: white;
+            width: 95%;
+
+        }
+        .container h2 {
+            background-color: #1F8A70; /* Set the background color to yellow (#FFFF00) */
+            display: inline-block;
+            padding: 10px;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4); /* Add shadow effect */
+            color: white;
+            width: 95%;
+        }
+        header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: #47A992;
+        padding: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 9999;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+      }
+  
+      /* Add styles for the "Enroll Now" button */
+      .enroll-button {
+        padding: 10px 20px;
+        background-color: #f44336;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .enroll-button:hover {
+      background-color: #e53935;
+    }
+      .logo {
+      display: flex;
+      align-items: center;
+    }
+  
+      .logo img {
+      height: 50px;
+      margin-right: 10px;
+      transition: transform 0.3s ease;
+    }
+  
+    .logo img:hover {
+    transform: rotate(360deg);
+    }
+  
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li:first-child {
+    margin-left: 0;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+  }
+  /* Additional CSS for nested list */
+nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #1F8A70;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid white; /* Add border */
+  text-align: center; /* Center the text */
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul li {
+  display: block;
+  margin-right: 0;
+  margin-bottom: 5px; /* Add margin bottom for spacing */
+}
+
+nav ul ul li a {
+  color: white;
+  text-decoration: none;
+}
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="SLCV.png" alt="School Logo">
+      <h1> ST. LOUIS COLLEGE VALENZUELA </h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="schools.html">School</a>
+              <ul>
+                <li><a href="preschool.html">PreSchool</a></li>
+                <li><a href="secondary.html">Secondary School</a></li>
+                <li><a href="seniorhigh.html">Senior High School</a></li>
+                <li><a href="college.html">College</a></li>
+              </ul>
+            </li>
+            <li><a href="admissions.html">Admissions</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="enroll.html" class="enroll-button">Enroll Now</a></li>
+      </ul>
+    </nav>
+  </header>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <h1>BRIEF HISTORY</h1>
+        <img src="school.PNG" alt="School Image">
+        <p> St. Louis College Valenzuela is devoted to the education and development of productive and responsible citizens molded in Christian-centered values through proper formation and example for the benefit and betterment of Filipino society at large.</p>
+        <p>Established in 1976 as the Philippine College of Technological Resources (PCTR), the school was founded by the educator Jose C. Olivares, who also served as the school's first president. When actual operations began on 14 February 1978, it had facilities and amenities for secondary school and college.</p>
+        <!-- Rest of the paragraphs... -->
+        <p class="bottom-paragraph">Today, St. Louis College Valenzuela has matured into an educational institution that the city of Valenzuela can be proud of. Its faculty is a richly diverse group of men and women dedicated to promote a Christian-centered education for a new generation of Filipino youth ready to face the challenges of the 21st century. Its students, coming from a broad cross-section of Filipino society, are active participants in the promise and the future of the Philippines, and their contributions to the Filipino dream as productive and responsible citizens will surely be a measure of distinction for all.</p>
+
+        <h2>OUR PHILOSOPHY</h2>
+        <p>We believe that every human being has the capacity to develop his intellect and free will. Academic excellence at St. Louis College Valenzuela is not solely focused on the acquisition of knowledge and the upgrading of skills, rather, the institution shall also provide the proper venue for the pursuit of wisdom which becomes the basic source from which the students discern, judge, and act on the different facets of reality.</p>
+        <p>We believe that in all areas of academic life, the process of discerning truth is guided by a clear and critical study of the objective conditions of reality. Truth is consistent with the purpose of law and justice and enhanced by a free exchange of ideas.</p>
+        <p>We believe that the achievement of the fullness of its Christian orientation is primarily founded on the inculcation of the virtue of charity among its students. St. Louis College Valenzuela shall train its students to be men for others with awareness of the economic, political, and socio-cultural realities in the local and global contexts. The institution likewise empowers its students so that they become active participants in nation building as well as catalysts of change, knowing fully well that Christian benevolence is realized only through the outward manifestation of genuine concern, strong commitment and decisive action for the benefit of the others in particular and the society at large.</p>
+    </div>
+  
+</body>
+</html>
